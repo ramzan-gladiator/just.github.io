@@ -1,0 +1,34 @@
+$primary-color:#000;
+$secondary-color: #ff652f;
+
+@mixin trans{
+	transition:all .5s ease;
+}
+
+@function s-t-c($color){
+	@if (lightness($color) > 40%) {
+		@return #000;
+	}
+	@else{
+		@return #fff;
+	}
+}
+
+/*media*/
+@mixin media-md{
+	@media screen and(min-width:768px){
+		@content;
+	}
+}
+
+@mixin media-lg{
+	@media screen and(min-width:1024px){
+		@content;
+	}
+}
+
+@mixin media-xl{
+	@media screen and(min-width:1600px){
+		@content;
+	}
+}

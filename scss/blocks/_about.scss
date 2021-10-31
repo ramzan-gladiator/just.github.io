@@ -1,0 +1,73 @@
+ @import "_config" ;
+ .about{
+ 	padding:0 0 2rem 0;
+ 	overflow: hidden;
+ 	&__bio-image{
+ 		display: flex;
+ 		flex-direction: column;
+ 		align-items: center;
+ 		justify-content: flex-end;
+ 		overflow: hidden;
+ 		width:100%;
+ 		height:40vh;
+ 		background: linear-gradient(
+ 			to right, 
+ 			rgba($primary-color, .9),
+ 			rgba($primary-color, .3)
+ 			), url("../../img/model-1.jpg") center top / cover no-repeat #fff;
+
+ 	}
+
+ 	&__bio{
+ 		color:$secondary-color;
+ 		margin-bottom:1rem;
+ 		width:80%;
+ 		text-align: center;
+ 	}
+
+ 	/*jobs*/
+ 	.jobs{
+ 		width:60vw;
+ 		margin:2rem auto 0;
+ 		display:grid;
+ 		grid-template-columns: 1fr;
+ 		grid-gap:2rem;
+
+
+ 		&__job{
+ 			background:lighten($primary-color, 30%);
+ 			border-bottom:5px solid $secondary-color;
+ 			padding:.5rem;
+ 			.text-sec{
+ 				color:$secondary-color;
+ 				font-size: 1.2rem;
+ 			}
+
+ 			h2, h3{
+ 				padding:.3rem 0;
+
+ 			}
+
+ 			h3{
+ 				font-size: 1.1rem;
+ 			}
+
+ 			h6{
+ 				padding:.5rem 0;
+ 				font-size: 0.8rem;
+ 			}
+ 		}
+ 	}
+
+
+ 	.social-icons{
+ 		display: flex;
+ 		flex-direction: column;
+ 	}
+
+ 	.footer{
+ 		transform: rotate(90deg) translate(-3rem, -3rem);
+ 		font-weight: 700;
+ 	}
+ }
+ 
